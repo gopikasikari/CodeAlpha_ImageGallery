@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+    <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="city">City</button>
+    <button class="filter-btn" data-filter="animals">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <img src="images/nature1.jpg" alt="Nature photo 1" data-category="nature">
+    <img src="images/nature2.jpg" alt="Nature photo 2" data-category="nature">
+    <img src="images/city1.webp" alt="City photo 1" data-category="city">
+    <img src="images/city2.webp" alt="City photo 2" data-category="city">
+    <img src="images/animal1.webp" alt="Animal photo 1" data-category="animals">
+    <img src="images/animal2.webp" alt="Animal photo 2" data-category="animals">
+  </div>
+
+
+    <div class="lightbox" id="lightbox">
+    <button class="close" id="close">&times;</button>
+    <button class="nav prev" id="prev">&#10094;</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="nav next" id="next">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
